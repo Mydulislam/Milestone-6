@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display JSON Object in my html file</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="button-area">
+        <button onclick="loadJsonTodosFirstData()">Load Data</button>
+        <button onclick="jsonPost()">Load Json Post Data</button>
+        <button onclick="jsonComments()">Load Comments</button>
+        <button onclick="jsonAlbum()">Json Albums</button>
+        <button onclick="jsonUser()">Json User</button>
+    </header>
+    
+    <main class="main-part">
+        <section class="user-section">
+            <h1>JSON USERS</h1>
+                <div id="user-area">
+                
+                </div>
+            <div class="delete-button">
+                <button onclick="deleteUser()" id="delete">Delete user</button>
+            </div>
+        </section>
+
+        <section class="post-section">
+            <h1>JSON Post</h1>
+                <div id="post-area">
+                
+                </div>
+            <div class="delete-button">
+                <button onclick="deletePost()" id="delete">Delete Post</button>
+            </div>
+        </section>
+
+        <section class="todos-section">
+            <h1>JSON Todos</h1>
+                <div id="todos-area">
+                
+                </div>
+            <div class="delete-button">
+                <button onclick="deletetodos()" id="delete">Delete Todos</button>
+            </div>
+        </section>
+
+        <section class="comments-section">
+            <h1>JSON Comments</h1>
+                <div id="comments-area">
+                
+                </div>
+            <div class="delete-button">
+                <button onclick="deleteComments()" id="delete">Delete Comment</button>
+            </div>
+        </section>
+    </main>
+    <script src="display.js"></script>
+</body>
+</html>
