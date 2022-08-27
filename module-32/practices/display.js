@@ -9,6 +9,8 @@ function loadJsonTodosFirstData(){
         .then(json => console.log(json))
 }
 
+// json post
+
 function jsonPost(){
     let url = 'https://jsonplaceholder.typicode.com/posts';
     fetch(url)
@@ -16,6 +18,7 @@ function jsonPost(){
         .then(data => console.log(data))
 }
 
+// json comments
 function jsonComments(){
     let url = 'https://jsonplaceholder.typicode.com/comments';
     fetch(url)
@@ -23,6 +26,7 @@ function jsonComments(){
         .then(data => console.log(data))
 }
 
+// json albums
 function jsonAlbum(){
     let url = 'https://jsonplaceholder.typicode.com/albums';
     fetch(url)
@@ -30,6 +34,7 @@ function jsonAlbum(){
         .then(data => console.log(data))
 }
 
+// json user
 function jsonUser(){
     let url = 'https://jsonplaceholder.typicode.com/users';
     fetch(url)
@@ -37,7 +42,9 @@ function jsonUser(){
         .then(data => console.log(data))
 }
 
-// Show our html code
+/* ==============================================================================================
+Show our html code
+================================================================================================*/
 
 function showUser(){
     let url = 'https://jsonplaceholder.typicode.com/users';
@@ -89,6 +96,31 @@ function postFunct(datas){
     
 }
 showPost()
+
+
+// delete 
+function deletePost(){
+    fetch('https://jsonplaceholder.typicode.com/posts/1', {
+        method: 'DELETE',
+    });
+}
+// Add post
+function addPost(){
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+}
+
 
 // Todos display HTML
 
