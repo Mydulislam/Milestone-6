@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .country{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+        }
+        .country-bg{
+            background-color: chartreuse;
+            border: 1px solid royalblue;
+            border-radius: 5px;
+            padding:10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .country-bg div{
+            width:50%
+        }
+        .country-bg img{
+            max-width: 100%;
+            width: 65%;
+        }
+        button{
+            border:none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Difference Country</h1>
+    </header>
+    
+    <main>
+        <section>
+            <div id="details-country">
+
+            </div>
+        </section>
+        <section>
+            <div id="country" class="country">
+
+            </div>
+        </section>
+    </main>
+    <script src="difference-country.js"></script>
+</body>
+</html>
