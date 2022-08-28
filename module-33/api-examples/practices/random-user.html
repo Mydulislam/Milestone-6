@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Difference Country</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .max-width{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .user{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .bg{
+            background-color: azure;
+            padding:20px;
+            text-align: center;
+            border-radius: 7px;
+        }
+        .bg img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Random User</h1>
+    </header>
+    <main>
+        <section class="max-width">
+            <div id="user" class="user">
+
+            </div>
+        </section>
+    </main>
+    <script src="random-user.js"></script>
+</body>
+</html>
