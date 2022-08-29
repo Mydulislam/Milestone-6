@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Placeholder comments click button and show comment</title>
+    <style>
+        main{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        header button{
+            padding: 10px 20px;
+            border: 1px solid royalblue;
+            background-color: seagreen;
+            color:#fff;
+            border-radius: 5px;
+        }
+        .comments-area{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .comment-bg{
+            background-color: azure;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ২. যে কমেন্ট এর ডাটাগুলো কনসোল এ দেখাতে পারছো। সেগুলা আবার তুমি html এ দেখাতে পারতেছো কিনা। 
+    একটা সিস্টেম হবে তোমার একটা বাটন। থাকবে সেটাতে ক্লিক করলে ডাটা লোড হবে। তারপর সেই ডাটা তুমি ওয়েবসাইট 
+    এ দেখাবে।  -->
+    <header>
+        <h1>All placeholder comments</h1>
+        <button onclick="showComments()">Click to show comments</button>
+    </header>
+    <main>
+        <section>
+            <div id="comments-area" class="comments-area">
+
+            </div>
+        </section>
+    </main>
+    
+    <script src="practice2.js"></script>
+</body>
+</html>
