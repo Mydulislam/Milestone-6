@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A beautiful</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        h1{
+            text-align: center;
+        }
+        h3,p{
+            font-family: 'Roboto', sans-serif;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 25px;
+        }
+        main{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .search-area{
+            text-align: center;
+        }
+        .search-area input{
+            width: 30%;
+            padding: 10px 20px;
+            outline: none;
+        }
+        .search-area button{
+            border: none;
+            padding: 10px 20px;
+            background: darkgray;
+            color: #fff;
+            font-size: 17px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .current-food-area{
+            width: 35%;
+            margin: 25px auto;
+        }
+        .food-area{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .food-info{
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: ghostwhite;
+        }
+        img{max-width:100%}
+        .food-content{
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .card-body{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Meals DB</h1>
+    </header>
+    <main>
+        <section>
+            <div class="search-area">
+                <input id="input-field" type="text">
+                <button id="search" onclick="searchFood()">Search</button>
+            </div>
+        </section>
+        <section>
+            <div id="current-food-area" class="current-food-area">
+
+            </div>
+        </section>
+        <section>
+            <div id="food-area" class="food-area">
+
+            </div>
+        </section>
+    </main>
+    <script src="food.js"></script>
+</body>
+</html>
